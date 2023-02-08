@@ -140,13 +140,13 @@ namespace VHACD {
 
     [Serializable]
     public class ConvexHull {
-        public double[] m_points;
-        public uint[] m_triangles;
+        public double[] m_points = { };
+        public uint[] m_triangles = { };
 
         public double m_volume = 0;          // The volume of the convex hull
         public double[] m_center = { 0, 0, 0 };    // The centroid of the convex hull
         public uint m_meshId = 0;          // A unique id for this convex hull
-        public double[] mBmin;                  // Bounding box minimum of the AABB
-        public double[] mBmax;                  // Bounding box maximum of the AABB
+        public double[] mBmin = { };                  // Bounding box minimum of the AABB
+        public double[] mBmax = { };                  // Bounding box maximum of the AABB
     }
 }

@@ -8,7 +8,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\dll\libvhacd.vcxproj" />
+    <None Include="..\dll\x64\Release\libvhacd.dll" Link="libvhacd.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>
